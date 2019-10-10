@@ -1,4 +1,4 @@
-FROM python:3.7.3-slim-stretch
+FROM python:3.7-slim-stretch
 LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Environment Variables
