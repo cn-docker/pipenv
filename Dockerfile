@@ -12,4 +12,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install Pipenv
-RUN curl https://raw.githubusercontent.com/kennethreitz/pipenv/master/get-pipenv.py | python
+RUN pip install pipenv==2022.1.8
