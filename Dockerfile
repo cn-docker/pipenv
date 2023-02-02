@@ -11,5 +11,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Install Pipenv
-RUN pip install pipenv==2022.1.8
+# Install Python requirements
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install --requirement /tmp/requirements.txt && \
+    rm -Rf /root/.cache/pip
