@@ -1,4 +1,4 @@
-FROM cnservices/pyenv
+FROM python:3.12.0-slim
 LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Environment Variables
@@ -7,5 +7,5 @@ ENV LANG C.UTF-8
 
 # Install Python requirements
 COPY requirements.txt /tmp/requirements.txt
-RUN pip install --requirement /tmp/requirements.txt && \
+RUN pip install --no-cache-dir --requirement /tmp/requirements.txt && \
     rm -Rf /root/.cache/pip
