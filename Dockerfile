@@ -1,4 +1,4 @@
-FROM python:3.12.4-slim
+FROM python:3.12.5-slim
 LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Environment Variables
